@@ -29,7 +29,7 @@ public class Cliente {
         int telefono = scanner.nextInt();
 
         new Cliente(rut, nombre, mail, direccion, telefono);
-        // Cliente.validarRut(rut); commented because tira el meo herror, compare.
+        // Cliente.validarRut(rut); commented because tira el meo error, compare.
     }
 
     /*public static void validarRut(String rut) {
