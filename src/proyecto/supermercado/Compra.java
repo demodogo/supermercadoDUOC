@@ -30,7 +30,7 @@ public class Compra {
     public static void addProduct(ArrayList<Producto> products) {
         Scanner scanner = new Scanner(System.in);
         boolean continuar = true;
-        int tries = 0;
+        int tries;
         while (continuar) {
             tries = 0;
             System.out.println("Seleccione un producto:");
@@ -97,13 +97,11 @@ public class Compra {
         return nSolicitud;
     }
 
-    public static  String nuevaSolicitud(ArrayList<String> cart, ArrayList<Producto> products, String nSolicitud) {
+    public static  void nuevaSolicitud(ArrayList<String> cart, ArrayList<Producto> products) {
         cart.clear();
         int intSolicitud = Integer.parseInt(Compra.nSolicitud);
         intSolicitud++;
-        System.out.println(intSolicitud);
         Compra.nSolicitud = Integer.toString(intSolicitud);
         Menu.getMenu(products);
-        return nSolicitud;
     }
 }

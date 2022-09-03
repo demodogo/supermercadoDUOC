@@ -20,7 +20,7 @@ public class Menu {
             case 3:
                 Compra.getBoleta(cart, total, products);
             case 4:
-                Compra.nuevaSolicitud(cart, products,Compra.nSolicitud);
+                Compra.nuevaSolicitud(cart, products);
             case 5:
                 System.exit(0);
                 Compra.setSolicitud(Compra.nSolicitud);
